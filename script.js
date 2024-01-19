@@ -1,14 +1,12 @@
-// let num_1 = 3;
-// let num_2 = 6;
-// function mult(){
-//     console.log(num_1 * num_2)
-// }
-//
-// mult();
-
-
-function mult(x,y){
-   console.log(x * y)
+function getRandom(max=10,min = 0){
+   return Math.floor(Math.random() * (max-min)+min);
 }
 
-mult(3,6);
+function getColor(){
+   let r = getRandom(256);
+       g = getRandom(256);
+       b = getRandom(256);
+   return `rgb(${r},${g},${b}`;
+}
+
+document.body.style.background = getColor();
