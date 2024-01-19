@@ -1,5 +1,14 @@
-let last_name = "\nСтарозубов";
-let name = "Всеволод";
+// let num_1 = 3;
+// let num_2 = 6;
+// function mult(){
+//     console.log(num_1 * num_2)
+// }
+//
+// mult();
 
-let result = (name.trim().length)+(last_name.trim().length);
-console.log(result);
+
+function mult(x,y){
+   console.log(x * y)
+}
+
+mult(3,6);
